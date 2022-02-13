@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DUMaster.master.cs" Inherits="DUMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/bootstrap.bundle.js"></script>
+    <link href="~/Content/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+    <script src="~/Content/fontawesome-free-5.15.4-web/js/all.js"></script>
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid ">
+            <div class="row bg-light">
+                <div class="container col-md-9 bg-light">
+                    <div class="row ">
+                        <div class="col-md-3 container">
+                            <asp:Image ID="imgProfile" runat="server" ImageUrl="~/Content/Images/DIET_Logo.svg" ToolTip="Darshan Institute of Engineering & Technology" />
+                        </div>
+
+                        <div class="row text-right nav nav-link col-md-9">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <asp:HyperLink ID="hlStudentCorner" runat="server" CssClass="btn btn-secondary fas fa-bell" NavigateUrl="https://gtu.darshan.ac.in/DIET/StudentCorner" ToolTip="Student Corner">Student Corner</asp:HyperLink>
+                                    | &nbsp;
+                                        <asp:HyperLink ID="hlPayFees" runat="server" CssClass="btn btn-success fas fa-rupee-sign" NavigateUrl="https://gtu.darshan.ac.in/DIET" ToolTip="Pay Fees">Pay Fees</asp:HyperLink>
+                                    | &nbsp; 
+                                        <asp:HyperLink ID="hlNIRF" runat="server" CssClass="btn btn-light fas fa-suitcase" NavigateUrl="https://gtu.darshan.ac.in//DIET/NIRF" ToolTip="NIRF">NIRF</asp:HyperLink>
+                                    | &nbsp;
+                                        <asp:HyperLink ID="hlCareer" runat="server" CssClass="btn btn-info fas fa-briefcase" NavigateUrl="~/pages/Career.aspx" ToolTip="Career">Career</asp:HyperLink>
+                                    | &nbsp;
+                                        <asp:HyperLink ID="hlQuickLinks" runat="server" CssClass="btn btn-secondary fas fa-anchor" NavigateUrl="https://gtu.darshan.ac.in/DIET" ToolTip="Quick Links">Quick Links</asp:HyperLink>
+                                    | &nbsp;
+                                        <asp:HyperLink ID="hlDiplomaWebsite" runat="server" CssClass="btn btn-primary fas fa-share" NavigateUrl="https://gtu.darshan.ac.in/DIETDS" ToolTip="Diploma Website">Diploma Website</asp:HyperLink>
+                                    &nbsp;  
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <asp:HyperLink ID="hlHome" runat="server" class="btn btn-light" NavigateUrl="~/pages/Home.aspx" ToolTip="Home"><i class="fas fa-home"></i></asp:HyperLink>&nbsp;
+                                        <asp:HyperLink ID="hlAbout" runat="server" class="btn btn-light" NavigateUrl="~/pages/About.aspx" ToolTip="about">About</asp:HyperLink>&nbsp; 
+                                        <asp:HyperLink ID="hlAdmission" runat="server" class="btn btn-light" NavigateUrl="~/pages/Admission.aspx" ToolTip="Admission">Admission</asp:HyperLink>&nbsp;
+                                        <asp:HyperLink ID="hlDepartment" runat="server" class="btn btn-light" NavigateUrl="~/pages/Department.aspx" ToolTip="Department">Department</asp:HyperLink>&nbsp;
+                                        <asp:HyperLink ID="hlFacilities" runat="server" class="btn btn-light" NavigateUrl="~/pages/Library.aspx" ToolTip="Facilities">Facilities</asp:HyperLink>&nbsp;
+                                        <asp:HyperLink ID="hlEvent" runat="server" class="btn btn-light" NavigateUrl="~/pages/Student_Activity_Center_SAC.aspx" ToolTip="Event">Events</asp:HyperLink>&nbsp;
+                                        <asp:HyperLink ID="hlCounsultancy" runat="server" class="btn btn-light" NavigateUrl="#" ToolTip="Counsultancy">Counsultancy</asp:HyperLink>&nbsp;
+                                        <asp:HyperLink ID="hlPlacement" runat="server" class="btn btn-light" NavigateUrl="#" ToolTip="Placement">Placement</asp:HyperLink>&nbsp;
+                                        <asp:HyperLink ID="hlGoverment" runat="server" class="btn btn-light" NavigateUrl="~/pages/GovermentLicenses.aspx" ToolTip="Placement">GovermentLicenses</asp:HyperLink>&nbsp;
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="cphMainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="container-fluid">
+
+            <div class="row bg-secondary">
+                <div class="container col-md-12 text-white ">
+                    <div class="row col-12">
+                        <div class="container col-3">
+                            <div style="width: 350px;">
+                                ABOUT US&nbsp;<br />
+                                Darshan Institute of Engineering & Technology is a leading institute offering undergraduate (B.E.), postgraduate (M.E.) and Diploma programs in engineering.    
+                            </div>
+                        </div>
+
+                        <div class="container col-3">
+                            <div style="width: 350px;">
+                                FOR STUDENT / PARENTS&nbsp;<br />
+                                Student Corner<br />
+                                DParent App (Android)<br />
+                                DParent App (iPhone)<br />
+                                DLib App (Android)<br />
+                                GTU Website<br />
+                                News Letters<br />
+                            </div>
+                        </div>
+                        <div class="container col-3">
+                            <div style="width: 350px;">
+                                FOR OTHERS&nbsp;<br />
+                                Journal : IJDI-ERET<br />
+                                Consultancy - Civil / Environment (CCC)<br />
+                                Consultancy - Electrical (EMC)<br />
+                                Software Development - ASWDC<br />
+                                Government Licenses & Tie-ups<br />
+                                Career<br />
+                                Civil Engineering Calculators<br />
+                            </div>
+                        </div>
+                        <div class="container col-3">
+                            <div style="width: 350px;">
+                                OUR CONTACTS&nbsp;<br />
+                                At Hadala, Rajkot - Morbi Highway,  Gujarat-363650, INDIA<br />
+                                (+91) 97277 47310<br />
+                                (+91) 97277 47311<br />
+                                info@darshan.ac.in<br />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row  bg-dark">
+                        <div class="container text-white">
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <h6>2022 © All Rights Reserved.</h6>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <i class="fab fa-facebook"></i>&nbsp;
+                                        <i class="fab fa-twitter"></i>&nbsp;
+                                        <i class="fab fa-linkedin-in"></i>&nbsp;
+                                        <i class="fab fa-instagram"></i>&nbsp;
+                                        <i class="fab fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
